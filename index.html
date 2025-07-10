@@ -5,31 +5,232 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jooyoung Portfolio</title>
   <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/suit-font@1.0.0/stylesheet.css">
+  <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div id="intro">
     <h1 class="name">KIM JOO YOUNG</h1>
     <ul class="gnb">
-      <li><a href="#">&lt;About me/&gt;</a></li>
-      <li><a href="#">&lt;Projects/&gt;</a></li>
-      <li><a href="#">&lt;Contact/&gt;</a></li>
+      <li><a href="#about-me">&lt;About me/&gt;</a></li>
+      <li><a href="#projects">&lt;Projects/&gt;</a></li>
+      <li><a href="#footer">&lt;Contact/&gt;</a></li>
     </ul>
     <div class="i-am">
-      <p>i am</p>
+      <p>I am</p>
       <div class="brackets">[ <span id="typed"></span>] </div>
     </div>
   </div>
 
     
   <div id="section">
-    <div class="nav"></div>
-    <div class="about-me"></div>
-    <div class="projects"></div>
+    <div class="wrap-nav">
+      <ul class="nav">
+        <li><a href="#intro" class="title">INTRO</a></li>
+        <li><a href="#about-me" class="title">ABOUT&nbsp;ME</a></li>
+        <li><a href="#projects" class="title">PROJECTS</a></li>
+        <li><a href="#footer" class="title">CONTACT</a></li>
+      </ul>
+    </div>
+
+    <div id="about-me">
+      <h1 class="section-title grid-cont">ABOUT ME</h1>
+
+      <div class="wrap-profile grid-cont">
+        <div>
+          <img src="images/profile.png" alt="프로필사진" class="me">
+        </div>
+        <div class="profile">
+          <div class="info">
+            <p>
+              <span class="txt-tit">이름</span>&nbsp;&nbsp;&nbsp;
+              김&nbsp;주&nbsp;영
+            </p>
+            <p>
+              <span class="txt-tit">생년월일</span>&nbsp;&nbsp;&nbsp;
+              1991년 11월 16일
+            </p>
+          </div>
+          <ul class="contact">
+            <li>
+              <img src="images/call.png" alt="ico-phone">
+              <span>010-4809-3500</span>
+            </li>
+            <li>
+              <img src="images/mail.png" alt="ico-mail">
+              <span>jykimjulia@gmail.com</span>
+            </li>
+            <li>
+              <img src="images/web.png" alt="ico-web">
+              <span>portfolio-git-address</span>
+            </li>
+            <li>
+              <img src="images/git.png" alt="ico-git">
+              <span>https://github.com/Jooyoung35</span>
+            </li>
+          </ul>
+          <img src="images/profile-img.png" alt="타이포" class="typo">
+        </div>
+      </div>
+
+      <div class="resume-tit grid-cont">
+        <h2>디자인 감각과 개발 역량을 함께 갖춘 <span>김주영</span>입니다!</h2>
+      </div>
+
+      <div class="wrap-experience grid-cont">
+        <div class="experience">
+          <h3 class="mm-title">WORK EXPERIENCE</h3>
+          <dl>
+            <dt class="ss-title">
+              <span class="period">2018년 12월 ~ 현재 </span>
+              <span class="company">| 이쎌(주)</span>
+              <span class="position"> 경영지원팀 과장</span>
+            </dt>
+            <dd class="cont-txt">BIT&키오스크UI 디자인, 제안서 디자인, 브로셔 및 제품 디자인, 조달업무</dd>
+
+            <dt class="ss-title">
+              <span class="period">2015년 12월 ~ 2018년 11월 </span>
+              <span class="company">| (주)아뜨레</span>
+              <span class="position"> 온라인사업부 대리</span>
+            </dt>
+            <dd class="cont-txt">자사몰 홈페이지 관리, 상세페이지 및 배너 디자인</dd>
+
+            <dt class="ss-title">
+              <span class="period">2013년 03월 ~ 2015년 11월 </span>
+              <span class="company">| (주)로드닉스</span>
+              <span class="position"> 사업관리부 사원</span>
+            </dt>
+            <dd class="cont-txt">BIT UI 디자인 및 제안서 디자인, 자사몰 홈페이지 관리</dd>
+          </dl>
+        </div>
+      </div>
+
+      <div class="img-area1"></div>
+
+      <div class="wrpa-certif grid-cont">
+        <h3 class="mm-title">CERTIFICATIONS</h3>
+        <ul class="certificat">
+          <li>
+            <p class="add-date ss-title">2009년 07월</p>
+            <p class="cont-txt" class="cont-txt">정보기기운용기능사</p>
+          </li>
+          <li>
+            <p class="add-date ss-title">2012년 12월</p>
+            <p class="cont-txt" class="cont-txt">GTQ 그래픽 기술자격 1급</p>
+          </li>
+          <li>
+            <p class="add-date ss-title">2013년 03월</p>
+            <p class="cont-txt" class="cont-txt">GTQ 일러스트 1급</p>
+          </li>
+          <li>
+            <p class="add-date ss-title">2014년 01월</p>
+            <p class="cont-txt" class="cont-txt" class="cont-txt">컴퓨터그래픽기능사</p>
+          </li>
+          <li>
+            <p class="add-date ss-title">2023년 10월</p>
+            <p class="cont-txt">정보통신기술자 초급기술자</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="wrap-edu grid-cont">
+        <h3 class="mm-title">EDUCATION</h3>
+        <ul class="education">
+          <li>
+            <p class="edu-date ss-title">2007년 03월 ~ 2010년 02월</p>
+            <p class="cont-txt">파주여자고등학교 정보처리과</p>
+          </li>
+          <li>
+            <p class="edu-date ss-title">2025년 03월 ~ 2025년 08월</p>
+            <p class="cont-txt">생성형 AI 활용 UIUX웹디자인&웹퍼블리셔 개발과정</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="wrap-skill grid-cont">
+        <h3 class="mm-title">SKILLS&TOOLS</h3>
+        <ul class="skill-tool">
+          <li>
+            <img src="images/ico_photoshop.png" alt="포토샵">
+            <p class="ico-name">Photoshop</p>
+          </li>
+          <li>
+            <img src="images/ico_illustrator.png" alt="일러스트">
+            <p class="ico-name">Illustrator</p>
+          </li>
+          <li>
+            <img src="images/ico_figma.png" alt="피그마">
+            <p class="ico-name">figma</p>
+          </li>
+          <li>
+            <img src="images/ico_html.png" alt="html">
+            <p class="ico-name">HTML</p>
+          </li>
+          <li>
+            <img src="images/ico_css.png" alt="css">
+            <p class="ico-name">CSS</p>
+          </li>
+          <li>
+            <img src="images/ico_js.png" alt="js">
+            <p class="ico-name">JS</p>
+          </li>
+          <li>
+            <img src="images/ico_swiper.png" alt="swiper">
+            <p class="ico-name">Swiper</p>
+          </li>
+          <li>
+            <img src="images/ico_gsap.png" alt="GSAP">
+            <p class="ico-name">GSAP</p>
+          </li>
+        </ul>
+      </div>
+      
+
+      <div class="img-area2 grid-"></div>
+
+      <div class="introduce">
+        <h3 class="mm-title">INTRODUCTION</h3>
+        <p class="cont-txt">
+          10여 년간 UI 디자인, 제안서, 브로셔, 제품 디자인 등 다양한 시각 콘텐츠를 제작해왔습니다. 특히 현재 재직 중인 회사에서는 7년 넘게 근무하며, 여러 프로젝트에 애정과 책임감을 가지고 끝까지 완수한 경험이 있습니다.<br>전공은 개발과 무관하지만, 이 점이 오히려 문제를 다양한 시각으로 바라보는 데 도움이 되었습니다. &lt;생성형 AI 활용 UIUX웹디자인&웹퍼블리셔 개발 과정&gt;을 수료하며 HTML, CSS, JavaScript를 익혔고, 실제 브랜드의 클론 코딩,리뉴얼 디자인, 반응형 구현, 백엔드 협업 등의 실습 프로젝트를 통해 실무 감각을 키웠습니다.  현재는 퍼블리싱을 넘어, 프론트엔드 역량을 키우기 위해  React와 Next.js를 공부 중입니다.<br>제가 가장 중요하게 생각하는 건 '디테일'입니다. 작은 여백, 버튼 위치 하나로도 사용자 경험이 완전히 달라질 수 있다는 걸 알게 된 후로는, 디자인 시안을 그릴 때부터 반응형을 염두에 두고 그리드를 세심하게 설정하며, 최종 코드 구현까지의 전체 흐름을 항상 고려하게 되었습니다. 앞으로는 코드 지향적 디자이너이자, 디자인의 본질을 구현할 수 있는 프론트엔드 개발자가 되고 싶습니다.
+        </p>
+      </div>
+
+
+      
+    </div>
+
+    <div id="projects">    </div>
+
   </div>
 
-  <div id="footer"></div>
+  <div id="footer">
+    <div class="left-area">
+      <p>Developer</p>
+      <h3>KIM JOO YOUNG</h3>
+      <p class="copyright">ⓒ2025. kimjooyoung. All Rights Reserved.<br>
+        Chrome 브라우저 1920*1080해상도에 최적화된 사이트입니다.
+      </p>
+    </div>
+
+    <ul class="right-area">
+      <li>
+        <a href="tel:01048093500">010-4809-3500</a>
+        <img src="images/call_w.png" alt="ico-phone">
+      </li>
+      <li>
+        <a href="mailto:jykimjulia@gamil.com">jykimjulia@gmail.com</a>
+        <img src="images/mail_w.png" alt="ico-mail">
+      </li>
+      <li>
+        <a href="#">hooooo</a>
+        <img src="images/web_w.png" alt="ico-web">
+      </li>
+      <li>
+        <a href="https://github.com/Jooyoung35" target="_blank">https://github.com/Jooyoung35</a>
+        <img src="images/git_w.png" alt="ico-git">
+      </li>
+    </ul>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="index.js"></script>
