@@ -10,7 +10,7 @@
 
 
 
-//wrap-nav 위치
+//wrap-nav absolute > fixed
 window.addEventListener('scroll', () => {
     const section = document.getElementById('section');
     const wrapNav = document.querySelector('.wrap-nav');
@@ -25,22 +25,31 @@ window.addEventListener('scroll', () => {
   });
 
   
-  //nav 활성화 효과  이 부분 다시 한번 볼것!
-const sections = document.querySelectorAll("#intro, #about-me, #projects, #footer"); // 감지할 섹션들
-const navLinks = document.querySelectorAll(".wrap-nav .nav .title");
+  //nav 활성화 효과(화면중앙에 가장 가까운섹션에 class 주기)  이 부분 다시 한번 볼것!
+const sections = document.querySelectorAll("#intro, #about-me, #projects, #footer");
+const navLinks = document.querySelectorAll(".title");
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      const id = entry.target.getAttribute('id');
-      navLinks.forEach(link => {
-        link.classList.toggle("on", link.getAttribute("href") === `#${id}`);
-      });
+function onScroll() {
+  let currentId = ''; //중앙에 있는 섹션의 id를 담기 위한 변수
+  let minDistance = window.innerHeight; //가장 가까운 섹션을 찾기위해 기준이 되는 최소값 저장할 변수
+
+  sections.forEach(section => {
+    const rect = section.getBoundingClientRect(); //화면 내 위치정보
+    const sectionCenter = Math.abs(rect.top + rect.height / 2 - window.innerHeight / 2);
+    //섹션의 세로 중앙 좌표 / 2 - 화면의 세로 중앙좌표 / 2 , Math.abs = 두 중앙 사이의 거리
+    
+    if (sectionCenter < minDistance) { //이 섹션이 지금까지 본 것들 중에서 가장 화면 중앙에 가까우면, 가장 가까운 정보를 변수에 저장
+      minDistance = sectionCenter;
+      currentId = section.id;
     }
   });
-}, {
-  threshold: 0.4 // 섹션의 50%가 보이면 적용
-});
 
-sections.forEach(section => observer.observe(section));
-  
+  if (currentId) { //화면에 가까운 섹션이 있다면 link.getAttribute("href")가 현재 섹션  id와 같으면 클래스 붙여주기, 아니면 클래스 제거
+    navLinks.forEach(link => {
+      link.classList.toggle("on", link.getAttribute("href") === `#${currentId}`);
+    });
+  }
+}
+
+window.addEventListener('scroll', onScroll);
+window.addEventListener('load', onScroll);

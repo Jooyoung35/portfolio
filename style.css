@@ -99,19 +99,19 @@ body{
   display: grid;
   grid-template-columns: 28% 43% 29%;
   grid-template-rows: 100px 100px 388px 230px 230px 250px 320px;
+  border-left: 1px solid #9B9896;
 }
 
-
-#section #about-me .section-title{
+/* section 타이틀 텍스트 공통적용 */
+#section .section-title{
   grid-column-start: 1;
   grid-column-end: 4;
   color: #111111;
   font-weight: 900;
   line-height: 100px;
   padding-left: 60px;
-  border-bottom: 1px solid #9B9896;
-  border-left: 1px solid #9B9896;
 } 
+
 
 
 /* 프로필 */
@@ -122,7 +122,8 @@ body{
   grid-row-end: 7;
   border-right: 1px solid #9B9896;
   border-bottom: 1px solid #9B9896;
-  border-left: 1px solid #9B9896;
+  border-top: 1px solid #9B9896;
+  
 }
 #section #about-me .wrap-profile .me{
   width: 100%;
@@ -154,7 +155,7 @@ body{
 #section #about-me .wrap-profile .profile .typo{
   position: absolute;
   right: -2px;
-  bottom: -338px;
+  bottom: -336px;
 }
 
 
@@ -163,6 +164,8 @@ body{
   grid-column-start: 2;
   grid-column-end: 4;
   border-bottom: 1px solid #9B9896;
+  border-top: 1px solid #9B9896;
+
 }
 #section #about-me .resume-tit h2{
   font-size: 26px;
@@ -285,7 +288,7 @@ body{
   cursor: pointer;
 }
 #section #about-me .wrap-skill .skill-tool li+li{
-  margin-left: 24px;
+  margin-left: 20px;
 }
 #section #about-me .wrap-skill .skill-tool li .ico-name{
   font-size: 14px;
@@ -318,7 +321,6 @@ body{
   grid-column-start: 1;
   grid-column-end: 4;
   border-bottom: 1px solid #9B9896;
-  border-left: 1px solid #9B9896;
   padding: 50px 4% 0 4%;
 }
 #section #about-me .introduce p{
@@ -328,7 +330,81 @@ body{
 
 
 
-/* contact-------------------------------------------- */
+
+
+#section #projects{
+  position: relative;
+  top: 0; 
+  left: 140px;
+  width: calc(100% - 140px);
+  background-color: #F5F6F1;
+  padding: 100px 0 150px;
+  border-left: 1px solid #9B9896;
+}
+#section #projects .pro-count{
+  width: 80%;
+  margin: 50px auto 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+#section #projects .pro-count .project{
+  width: 48.5%;
+  padding-top: 50px;
+  color: #ACACAC;
+  aspect-ratio: 5 / 4;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+#section #projects .pro-count .project:hover{
+  color: #FFB326;
+}
+#section #projects .pro-count .project h3{
+  font-size: 30px;
+  font-weight: 800;
+  margin-top: 10px;
+}
+#section #projects .pro-count .pantone{
+  background-image: url(images/pantone-b.png);
+}
+#section #projects .pro-count .onsil{
+  background-image: url(images/onsil-b.png);
+}
+#section #projects .pro-count .hyundai{
+  background-image: url(images/hyundai-b.png);
+  margin-top: 40px;
+}
+#section #projects .pro-count .aromatica{
+  background-image: url(images/aromatica-b.png);
+  margin-top: 40px;
+}
+
+
+#section #projects .pro-count .pantone:hover{
+  background-image: url(images/pantone.png);
+}
+#section #projects .pro-count .onsil:hover{
+  background-image: url(images/onsil.png);
+}
+#section #projects .pro-count .hyundai:hover{
+  background-image: url(images/hyundai.png);
+  margin-top: 40px;
+}
+#section #projects .pro-count .aromatica:hover{
+  background-image: url(images/aromatica.png);
+  margin-top: 40px;
+}
+
+
+
+
+
+/* footer (contact)-------------------------------------------- */
 #footer{
   position: relative;
   top: 0; 
