@@ -53,3 +53,42 @@ function onScroll() {
 
 window.addEventListener('scroll', onScroll);
 window.addEventListener('load', onScroll);
+
+
+
+
+// 모달창 (projects)
+
+// 프로젝트 클릭 시 모달 열고, 해당 콘텐츠만 보여주기
+document.addEventListener('click', function (e) {
+  const project = e.target.closest('.project');
+
+  if (project) {
+    // modal 전체 열기
+    document.querySelector('.modal').classList.add('active');
+
+    // 모든 모달 콘텐츠 숨기기
+    document.querySelectorAll('.modal-cont').forEach(item => {
+      item.classList.remove('active');
+    });
+
+    // 클래스에서 'pantone', 'onsil' 등 추출
+    const projectType = [...project.classList].find(cls => cls !== 'project');
+
+    // 해당 콘텐츠만 보이게
+    const targetModal = document.querySelector(`.m-${projectType}`);
+    if (targetModal) {
+      targetModal.classList.add('active');
+    }
+  }
+});
+
+// 닫기 버튼 누르면 모달 전체 닫고 콘텐츠도 숨김
+document.querySelectorAll('.close-btn').forEach(btn => {
+  btn.addEventListener('click', function () {
+    document.querySelector('.modal').classList.remove('active');
+    document.querySelectorAll('.modal-cont').forEach(item => {
+      item.classList.remove('active');
+    });
+  });
+});
