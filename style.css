@@ -406,7 +406,7 @@ body{
 /* 모달 */
 #section  .modal{
   width: 100vw;
-  height: 100vw;
+  height: 100vh;
   position: fixed;
   top: 0; left: 0;
   background-color: rgba(0, 0, 0, 0.5);
@@ -438,7 +438,7 @@ body{
   width: 100%;
   height: 100%;
   display: flex;
-  /* overflow-y: scroll; */
+  overflow-y: scroll;
 }
 
 /* 닫기버튼 */
@@ -547,6 +547,7 @@ body{
   row-gap: 10px;
   column-gap: 15px;
   font-weight: 700;
+  padding-bottom: 60px;
 }
 #section .modal .modal-cont .cont-wrap .ect dl dt{
   color: #8F8F8F;
@@ -557,16 +558,22 @@ body{
 /* 우측 이미지 영역 */
 #section  .modal .modal-cont .cont-wrap .modal-img{
   width: 45%;
-  display: flex;
-  position: relative;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
-#section  .modal .modal-cont .cont-wrap .modal-img .review1{
-  position: absolute;
-  bottom: 0px; left: 0px;
+#section  .modal .m-pantone .cont-wrap .modal-img{
+  background-image: url(images/review-pantone.png);
 }
-#section  .modal .modal-cont .cont-wrap .modal-img .review2{
-  position: absolute;
-  top: 0px; left: 300px;
+#section  .modal .m-onsil .cont-wrap .modal-img{
+  background-image: url(images/review-onsil.png);
+}
+#section  .modal .m-hyundai .cont-wrap .modal-img{
+  background-image: url(images/review-hyundai.png);
+}
+#section  .modal .m-aromatica .cont-wrap .modal-img{
+  background-image: url(images/review-aromatica.png);
 }
 
 
@@ -644,7 +651,12 @@ body{
   #section #about-me .img-area2{
     display: none;
   }
+
+
 }
+
+
+
 
 
 
@@ -716,6 +728,34 @@ body{
 
   #section #about-me .img-area2{
     display: none;
+  }
+
+
+/* modal */
+  #section .modal .modal-cont .cont-wrap{
+    display: block;
+  }
+  /* 좌측 텍스트 영역 */
+  #section  .modal .modal-cont .cont-wrap .modal-txt{
+    width: 100%;
+    padding: 70px 70px 0px 70px;
+  } 
+  /* 우측 이미지 영역 */
+  #section  .modal .modal-cont .cont-wrap .modal-img{
+    width: 100%;
+    background-position: center;
+  }
+  #section  .modal .m-pantone .cont-wrap .modal-img{
+    background-image: url(images/review-pantone-s.png);
+  }
+  #section  .modal .m-onsil .cont-wrap .modal-img{
+    background-image: url(images/review-onsil-s.png);
+  }
+  #section  .modal .m-hyundai .cont-wrap .modal-img{
+    background-image: url(images/review-hyundai-s.png);
+  }
+  #section  .modal .m-aromatica .cont-wrap .modal-img{
+    background-image: url(images/review-aromatica-s.png);
   }
 
 }
@@ -860,6 +900,32 @@ body{
   }
 
 
+/* modal */
+  #section .modal .modal-cont .cont-wrap{
+    display: block;
+  }
+  /* 좌측 텍스트 영역 */
+  #section  .modal .modal-cont .cont-wrap .modal-txt{
+    width: 100%;
+    padding: 70px 70px 0px 70px;
+  } 
+  /* 우측 이미지 영역 */
+  #section  .modal .modal-cont .cont-wrap .modal-img{
+    width: 100%;
+    background-position: center;
+  }
+  #section  .modal .m-pantone .cont-wrap .modal-img{
+    background-image: url(images/review-pantone-s.png);
+  }
+  #section  .modal .m-onsil .cont-wrap .modal-img{
+    background-image: url(images/review-onsil-s.png);
+  }
+  #section  .modal .m-hyundai .cont-wrap .modal-img{
+    background-image: url(images/review-hyundai-s.png);
+  }
+  #section  .modal .m-aromatica .cont-wrap .modal-img{
+    background-image: url(images/review-aromatica-s.png);
+  }
 
 
 
@@ -1014,6 +1080,32 @@ body{
     margin-top: 50px;
   }
 
+/* modal */
+  #section .modal .modal-cont .cont-wrap{
+    display: block;
+  }
+  /* 좌측 텍스트 영역 */
+  #section  .modal .modal-cont .cont-wrap .modal-txt{
+    width: 100%;
+    padding: 70px 70px 0px 70px;
+  } 
+  /* 우측 이미지 영역 */
+  #section  .modal .modal-cont .cont-wrap .modal-img{
+    width: 100%;
+    background-position: center;
+  }
+  #section  .modal .m-pantone .cont-wrap .modal-img{
+    background-image: url(images/review-pantone-s.png);
+  }
+  #section  .modal .m-onsil .cont-wrap .modal-img{
+    background-image: url(images/review-onsil-s.png);
+  }
+  #section  .modal .m-hyundai .cont-wrap .modal-img{
+    background-image: url(images/review-hyundai-s.png);
+  }
+  #section  .modal .m-aromatica .cont-wrap .modal-img{
+    background-image: url(images/review-aromatica-s.png);
+  }
 
 
 
@@ -1275,6 +1367,58 @@ body{
     margin-top: 0px;
   }
 
+/* modal */
+  #section .modal .modal-cont{
+    width: 90%;
+  }
+  #section .modal .modal-cont .cont-wrap{
+    display: block;
+  }
+  /* 좌측 텍스트 영역 */
+  #section  .modal .modal-cont .cont-wrap .modal-txt{
+    width: 100%;
+    padding: 20px;
+  } 
+  #section  .modal .modal-cont .cont-wrap .modal-txt .modal-title{
+    display: block;
+  }
+  #section  .modal .modal-cont .cont-wrap .modal-txt .modal-title .project-name{
+    font-size: 28px;
+    font-weight: 800;
+  }
+  #section  .modal .modal-cont .cont-wrap .modal-txt .modal-title a{
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+  #section .modal .modal-cont .cont-wrap .ect dl{
+    display: block;
+    padding-bottom: 0px;
+  }
+  #section .modal .modal-cont .cont-wrap .ect dl dt{
+    margin-top: 15px;
+  }
+  #section .modal .modal-cont .cont-wrap .ect dl dd{
+    margin-top: 5px;
+  }
+
+  
+  /* 우측 이미지 영역 */
+  #section  .modal .modal-cont .cont-wrap .modal-img{
+    width: 100%;
+    background-position: center;
+  }
+  #section  .modal .m-pantone .cont-wrap .modal-img{
+    background-image: url(images/review-pantone-s.png);
+  }
+  #section  .modal .m-onsil .cont-wrap .modal-img{
+    background-image: url(images/review-onsil-s.png);
+  }
+  #section  .modal .m-hyundai .cont-wrap .modal-img{
+    background-image: url(images/review-hyundai-s.png);
+  }
+  #section  .modal .m-aromatica .cont-wrap .modal-img{
+    background-image: url(images/review-aromatica-s.png);
+  }
 
 
 
