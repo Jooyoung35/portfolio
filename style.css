@@ -68,7 +68,6 @@ body{
   top: 0; left: 0;
   padding-top: 50px;
   background-color: #F5F6F1;
-
 }
 #section .wrap-nav .nav{
   display: flex;
@@ -98,7 +97,8 @@ body{
   background-color: #F5F6F1;
   display: grid;
   grid-template-columns: 28% 43% 29%;
-  grid-template-rows: 100px 100px 388px 230px 230px 250px 320px;
+  grid-template-rows: 100px 100px 1fr auto auto auto auto;
+  /* grid-template-rows: 100px 100px 1fr 230px 230px 250px 1fr; */
   border-left: 1px solid #9B9896;
 }
 
@@ -130,7 +130,7 @@ body{
   /* height: 488px; */
 }
 #section #about-me .wrap-profile .profile{
-  padding: 60px 0 0 15%;
+  padding: 60px 0 50px 15%;
   position: relative;
 }
 #section #about-me .wrap-profile .profile .info{
@@ -155,7 +155,7 @@ body{
 #section #about-me .wrap-profile .profile .typo{
   position: absolute;
   right: -2px;
-  bottom: -336px;
+  bottom: -294px;
 }
 
 
@@ -204,7 +204,7 @@ body{
   grid-column-start: 2;
   grid-column-end: 3;
   display: flex;
-  padding: 50px 0 0 8% ;
+  padding: 50px 0 50px 8% ;
   border-bottom: 1px solid #9B9896;
 }
 #section #about-me .wrap-experience .experience dl{
@@ -235,7 +235,7 @@ body{
   grid-column-start: 2;
   grid-column-end: 4;
   border-bottom: 1px solid #9B9896;
-  padding: 50px 0 0 4.8% ;
+  padding: 50px 0 50px 4.8% ;
 }
 #section #about-me .wrpa-certif .certificat{
   display: flex;
@@ -252,14 +252,17 @@ body{
   margin-left: 60px;
 }
 
-
+/* 이미지3 1666px 이하 사용 */
+#section #about-me .img3{
+  display: none;
+}
 
 /* 학력 */
 #section #about-me .wrap-edu{
   grid-column-start: 2;
   grid-column-end: 3;
   border-bottom: 1px solid #9B9896;
-  padding: 50px 0 0 8%;
+  padding: 50px 0 50px 8%;
 }
 #section #about-me .wrap-edu .education{
   display: flex;
@@ -277,7 +280,7 @@ body{
   grid-column-start: 2;
   grid-column-end: 3;
   border-bottom: 1px solid #9B9896;
-  padding: 50px 0 0 8%;
+  padding: 50px 0 50px 8%;
 }
 #section #about-me .wrap-skill .skill-tool{
   display: flex;
@@ -302,7 +305,7 @@ body{
 }
 
 
-/* 이미지 */
+/* 이미지2 */
 #section #about-me .img-area2{
   grid-column-start: 3;
   grid-column-end: 4;
@@ -324,14 +327,14 @@ body{
   padding: 50px 4% 0 4%;
 }
 #section #about-me .introduce p{
-  margin-top: 30px;
+  margin: 30px 0 50px;
 }
 
 
 
 
 
-
+/* projects */
 #section #projects{
   position: relative;
   top: 0; 
@@ -393,11 +396,9 @@ body{
 }
 #section #projects .pro-count .hyundai:hover{
   background-image: url(images/hyundai.png);
-  margin-top: 40px;
 }
 #section #projects .pro-count .aromatica:hover{
   background-image: url(images/aromatica.png);
-  margin-top: 40px;
 }
 
 
@@ -444,4 +445,690 @@ body{
 #footer .right-area li a{
   margin-right: 15px;
   color: #fff;
+}
+
+
+
+
+
+
+@media all and (min-width:1667px) and (max-width:1780px){
+  
+
+  /* 학력 */
+  #section #about-me .wrap-edu{
+    grid-column-end: 4;
+    padding-left:4.8%;
+  }
+
+
+  /* 기술 */
+  #section #about-me .wrap-skill{
+    grid-column-end: 4;
+    padding-left:4.8%;
+  }
+
+
+  #section #about-me .img-area2{
+    display: none;
+  }
+}
+
+
+
+@media all and (min-width:1400px) and (max-width:1666px){
+  
+  #section #about-me{
+    position: relative;
+    top: 0; 
+    left: 140px;
+    width: calc(100% - 140px);
+    background-color: #F5F6F1;
+    display: grid;
+    grid-template-columns: 28% 43% 29%;
+    border-left: 1px solid #9B9896;
+  }
+  
+/* 프로필 */
+  #section #about-me .wrap-profile{
+    grid-row-end: 5;    
+  }
+  #section #about-me .wrap-profile .profile{
+    padding-left: 5%;
+  }
+  #section #about-me .wrap-profile .profile .typo{
+    bottom: -161px;
+  }
+
+  /* 자격 */
+  #section #about-me .wrpa-certif{
+    grid-column-end: 3;
+    padding-left: 8%;
+  }
+  #section #about-me .wrpa-certif .certificat{
+    display: block;
+  }
+  #section #about-me .wrpa-certif .certificat li+li{
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+
+  /* 이미지3 */
+  #section #about-me .img3{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    display: block;
+    background-image: url(images/img3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+
+
+  /* 학력 */
+  #section #about-me .wrap-edu{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding-left: 4%;
+  }
+
+
+  /* 기술 */
+  #section #about-me .wrap-skill{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding-left: 4%;
+  }
+
+
+  #section #about-me .img-area2{
+    display: none;
+  }
+
+}
+
+
+
+
+@media all and (min-width:1000px) and (max-width:1399px){
+
+  #intro .gnb{
+    font-size: 36px;
+  }
+  #intro .i-am .brackets #typed{
+    font-size: 130px;
+  }
+
+
+    /* 이력서 제목 */
+  #section #about-me .resume-tit{
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  
+  
+  /* 프로필 */
+  #section #about-me .wrap-profile{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    display: flex;
+    border-top: none;
+    border-right: none;
+  }
+  #section #about-me .wrap-profile .profile{
+    width: 80%;
+    padding-left: 5%;
+  }
+  #section #about-me .wrap-profile .profile .contact{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  #section #about-me .wrap-profile .profile .contact li{
+    margin-right: 40px;
+    padding-top: 20px;
+  }
+  #section #about-me .wrap-profile .profile .contact li+li{
+    margin-top: 0px;
+  }
+  #section #about-me .wrap-profile .profile .typo{
+    display: none;
+  }
+  
+
+
+
+
+
+  /* 경력 */
+  #section #about-me .wrap-experience{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding-left: 12% ;
+  }
+  #section #about-me .wrap-experience .experience dl{
+    margin-top: 45px;
+    line-height: 1.7;
+  }
+  #section #about-me .wrap-experience .experience dt{
+    margin-top: 20px;
+  }
+
+
+
+    /* 이미지1 */
+  #section #about-me .img-area1{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5; 
+  }
+
+
+/* 자격 */
+#section #about-me .wrpa-certif{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  padding-left: 8%;
+}
+#section #about-me .wrpa-certif .certificat{
+  flex-wrap: wrap;
+}
+#section #about-me .wrpa-certif .certificat li{
+  margin: 20px 50px 0 0;
+}
+#section #about-me .wrpa-certif .certificat li+li{
+  margin-left: 0px;
+}
+
+
+/* 이미지2 */
+  #section #about-me .img-area2{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 7;
+    display: none;
+  }
+
+/* 학력 */
+  #section #about-me .wrap-edu{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding-left: 8%;
+  }
+
+
+  /* 기술 */
+  #section #about-me .wrap-skill{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding-left: 8%;
+  }
+
+  /* 자기소개 */
+  #section #about-me .introduce{
+    padding-left: 8%;
+  }
+
+
+
+  /* projects */
+  #section #projects .pro-count{
+    width: 100%;
+    display: block;
+  }
+  #section #projects .pro-count .project{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+
+
+
+
+  /* footer (contact)-------------------------------------------- */
+  #footer{
+    padding: 60px 50px;
+    height: auto;
+  }
+  #footer .right-area li img{
+    width: 32px;
+  }
+}
+
+
+
+
+
+
+@media all and (min-width:897px) and (max-width:999px){
+
+  #intro .gnb{
+    font-size: 36px;
+  }
+  #intro .i-am .brackets #typed{
+    font-size: 130px;
+  }
+
+
+    /* 이력서 제목 */
+  #section #about-me .resume-tit{
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  
+  
+  /* 프로필 */
+  #section #about-me .wrap-profile{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    display: flex;
+    border-top: none;
+    border-right: none;
+  }
+  #section #about-me .wrap-profile .profile{
+    width: 80%;
+    padding-left: 5%;
+  }
+  #section #about-me .wrap-profile .profile .contact{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  #section #about-me .wrap-profile .profile .contact li{
+    margin-right: 40px;
+    padding-top: 20px;
+  }
+  #section #about-me .wrap-profile .profile .contact li+li{
+    margin-top: 0px;
+  }
+  #section #about-me .wrap-profile .profile .typo{
+    display: none;
+  }
+  
+
+
+
+
+
+  /* 경력 */
+  #section #about-me .wrap-experience{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding-left: 12% ;
+  }
+  #section #about-me .wrap-experience .experience dl{
+    margin-top: 45px;
+    line-height: 1.7;
+  }
+  #section #about-me .wrap-experience .experience dt{
+    margin-top: 20px;
+  }
+
+
+
+    /* 이미지1 */
+  #section #about-me .img-area1{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5; 
+  }
+
+
+/* 자격 */
+#section #about-me .wrpa-certif{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  padding-left: 8%;
+}
+#section #about-me .wrpa-certif .certificat{
+  flex-wrap: wrap;
+}
+#section #about-me .wrpa-certif .certificat li{
+  margin: 20px 50px 0 0;
+}
+#section #about-me .wrpa-certif .certificat li+li{
+  margin-left: 0px;
+}
+
+
+/* 이미지2 */
+  #section #about-me .img-area2{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 7;
+    display: none;
+  }
+
+/* 학력 */
+  #section #about-me .wrap-edu{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding-left: 8%;
+  }
+
+
+  /* 기술 */
+  #section #about-me .wrap-skill{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding-left: 8%;
+  }
+
+  /* 자기소개 */
+  #section #about-me .introduce{
+    padding-left: 8%;
+  }
+
+
+  /* projects */
+
+  #section #projects .pro-count{
+    width: 100%;
+    display: block;
+  }
+  #section #projects .pro-count .project{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+
+
+
+
+  /* footer (contact)-------------------------------------------- */
+  #footer{
+    padding: 60px 50px;
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+
+  }
+  #footer .left-area{
+    text-align: center;
+    margin-top: 30px;
+  }
+  #footer .right-area{
+    text-align: center;
+  }
+  #footer .right-area li{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  #footer .right-area li+li{
+    margin-top: 30px;
+  }
+  #footer .right-area li a{
+    margin-right: 0px;
+  }
+  #footer .right-area li img{
+    width: 32px;
+    margin: 0 auto 5px;
+  }
+}
+
+
+
+
+
+@media all and (max-width:896px){
+
+  /* *{overflow: hidden;} */
+  
+  /* 인트로 */
+  #intro .gnb{
+    display: block;
+    font-size: 36px;
+  }
+  #intro .i-am{
+    font-size: 50px;
+  }
+  #intro .i-am .brackets #typed{
+    font-size: 48px;
+  }
+
+
+
+  /* 네비 */
+  #section .wrap-nav{
+    display: none;
+  }
+
+
+
+/* about-me */
+  #section #about-me{
+    position: relative;
+    top: 0px; 
+    left: 0px;
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    grid-template-columns: 100%;
+    grid-template-rows: 60px 100px 1fr auto auto auto auto auto ;
+  }
+
+  /* section 타이틀 텍스트 공통적용 */
+  #section .section-title{
+    line-height: 60px;
+    padding-left: 5%;
+  } 
+
+  /* 프로필 */
+  #section #about-me .wrap-profile{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    border-right: none;
+    border-top: 1px solid #9B9896;
+  }
+  #section #about-me .wrap-profile .profile{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  #section #about-me .wrap-profile .profile .info{
+    font-size: 18px;
+  } 
+  #section #about-me .wrap-profile .profile .contact{
+    font-size: 17px;
+  }
+  #section #about-me .wrap-profile .profile .contact li span{
+    line-height: 1.7;
+  }
+  #section #about-me .wrap-profile .profile .typo{
+    display: none;
+  }
+
+
+  /* 이력서 제목 */
+  #section #about-me .resume-tit{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border-bottom: none;
+    border-top: 1px solid #9B9896;
+  }
+  #section #about-me .resume-tit h2{
+    font-size: 20px;
+    line-height: 1.5;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 18px;
+  }
+
+  /* 경력 */
+  #section #about-me .wrap-experience{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    display: block;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  #section #about-me .wrap-experience .experience dt .period{
+    display: block;
+  }
+
+
+  /* 이미지1 */
+  #section #about-me .img-area1{
+    display: none;
+  }
+
+
+  /* 자격 */
+  #section #about-me .wrpa-certif{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  #section #about-me .wrpa-certif .certificat{
+    display: block;
+  }
+  #section #about-me .wrpa-certif .certificat li+li{
+    margin-top: 15px;
+    margin-left: 0px;
+  }
+
+
+
+  /* 학력 */
+  #section #about-me .wrap-edu{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  #section #about-me .wrap-edu .education{
+    display: block;
+  }
+  #section #about-me .wrap-edu .education li + li{
+    margin-left: 0px;
+    margin-top: 15px;
+  }
+
+
+  /* 기술 */
+  #section #about-me .wrap-skill{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  #section #about-me .wrap-skill .skill-tool{
+    flex-wrap: wrap;
+  }
+  #section #about-me .wrap-skill .skill-tool li{
+    width: 70px;
+    margin: 10px 10px 0 0;
+  }
+  #section #about-me .wrap-skill .skill-tool li+li{
+    margin-left: 0px;
+  }
+
+  /* 이미지2 */
+  #section #about-me .img-area2{
+    display: none;
+  }
+
+  /* 자기소개 */
+  #section #about-me .introduce{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 8;
+    grid-row-end: 9;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+
+
+
+  /* projects */
+  #section #projects{
+    top: 0px; 
+    left: 0px;
+    width: 100%;
+    border-left: none;
+    padding: 50px 0 100px;
+  }
+  #section #projects .pro-count{
+    width: 100%;
+    margin-top: 30px;
+    display: block;
+  }
+  #section #projects .pro-count .project{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding-top: 10px;
+  } 
+  #section #projects .pro-count .project p{
+    font-size: 14px;
+  }
+  #section #projects .pro-count .project h3{
+    font-size: 16px;
+    font-weight: 800;
+    margin-top: 0px;
+  }
+
+
+
+
+  /* footer (contact)-------------------------------------------- */
+  #footer{
+    position: relative;
+    top: 0; 
+    left: 0px;
+    padding: 60px 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  #footer .left-area{
+    text-align: center;
+    margin-top: 30px;
+  }
+  #footer .right-area{
+    text-align: center;
+    font-size: 16px;
+    color: #c0c0c0;
+  }
+  #footer .right-area li{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  #footer .right-area li+li{
+    margin-top: 30px;
+  }
+  #footer .right-area li a{
+    margin-right: 0px;
+  }
+  #footer .right-area li img{
+    width: 32px;
+    margin: 0 auto 5px;
+  }
 }
