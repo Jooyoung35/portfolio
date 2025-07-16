@@ -366,13 +366,14 @@ body{
 }
 #section #projects .pro-count .project:hover{
   color: #FFB326;
+  transform: translateY(-10px)
 }
 #section #projects .pro-count .project h3{
   font-size: 30px;
   font-weight: 800;
   margin-top: 10px;
 }
-#section #projects .pro-count .pantone{
+/* #section #projects .pro-count .pantone{
   background-image: url(images/pantone-b.png);
 }
 #section #projects .pro-count .onsil{
@@ -385,21 +386,26 @@ body{
 #section #projects .pro-count .aromatica{
   background-image: url(images/aromatica-b.png);
   margin-top: 40px;
-}
+} */
 
 
-#section #projects .pro-count .pantone:hover{
+#section #projects .pro-count .pantone{
   background-image: url(images/pantone.png);
 }
-#section #projects .pro-count .onsil:hover{
+#section #projects .pro-count .onsil{
   background-image: url(images/onsil.png);
 }
-#section #projects .pro-count .hyundai:hover{
+#section #projects .pro-count .hyundai{
   background-image: url(images/hyundai.png);
+  margin-top: 40px;
 }
-#section #projects .pro-count .aromatica:hover{
+#section #projects .pro-count .aromatica{
   background-image: url(images/aromatica.png);
+  margin-top: 40px;
 }
+
+
+
 
 
 
@@ -438,7 +444,7 @@ body{
   width: 100%;
   height: 100%;
   display: flex;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 }
 
 /* 닫기버튼 */
@@ -653,6 +659,7 @@ body{
   }
 
 
+
 }
 
 
@@ -734,6 +741,7 @@ body{
 /* modal */
   #section .modal .modal-cont .cont-wrap{
     display: block;
+    overflow: scroll;
   }
   /* 좌측 텍스트 영역 */
   #section  .modal .modal-cont .cont-wrap .modal-txt{
@@ -903,6 +911,7 @@ body{
 /* modal */
   #section .modal .modal-cont .cont-wrap{
     display: block;
+    overflow: scroll;
   }
   /* 좌측 텍스트 영역 */
   #section  .modal .modal-cont .cont-wrap .modal-txt{
@@ -1083,6 +1092,7 @@ body{
 /* modal */
   #section .modal .modal-cont .cont-wrap{
     display: block;
+    overflow: scroll;
   }
   /* 좌측 텍스트 영역 */
   #section  .modal .modal-cont .cont-wrap .modal-txt{
@@ -1373,6 +1383,7 @@ body{
   }
   #section .modal .modal-cont .cont-wrap{
     display: block;
+    overflow: scroll;
   }
   /* 좌측 텍스트 영역 */
   #section  .modal .modal-cont .cont-wrap .modal-txt{
