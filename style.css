@@ -486,9 +486,9 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 175px;
+  width: 150px;
   height: 45px;
-  margin-left: 50px;
+  margin-left: 20px;
   text-align: center;
   transition: all 0.3s
 }
