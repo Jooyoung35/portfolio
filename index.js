@@ -24,7 +24,36 @@ window.addEventListener('scroll', () => {
     }
   });
 
-  
+
+
+
+  // about-me 텍스트 애니메이션
+  // const ani8 = gsap.timeline();
+  // ani8.from("#section .t1", {x: innerWidth * 1})
+  //     .from("#section .t2", {x: innerWidth * -1})
+  //     .from("#section .t3", {x: innerWidth * 1})
+  //     .from("#section .t4", {x: innerWidth * -1})
+  //     .from("#section .t5", {x: innerWidth * 1})
+  //     .from("#section .t6", {x: innerWidth * -1})
+
+  // ScrollTrigger.create({
+  //     animation: ani8,
+  //     trigger: "#section",
+  //     start: "top top",
+  //     end: "+=4000",
+  //     scrub: true,
+  //     pin: true,
+  //     markers: true,
+  //     anticipatePin: 1
+  // });
+
+
+
+
+
+
+
+
   //nav 활성화 효과(화면중앙에 가장 가까운섹션에 class 주기)  이 부분 다시 한번 볼것!
 const sections = document.querySelectorAll("#intro, #about-me, #projects, #footer");
 const navLinks = document.querySelectorAll(".title");
